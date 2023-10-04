@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="makemytrip" class="anudip.com.MakeMyTrip" >
+   <property name="travel" ref="bus"></property>
+ </bean>
+ 
+ <bean id="bus" class="anudip.com.Bus">
+	<property name="DistanceCovered" value="bus"></property>
+  </bean>
+<bean id="train" class="anudip.com.Train" >
+   <property name="DistanceCovered" value="train"></property>
+   </bean>
+   <bean id="plain" class="anudip.com.Plain" >
+   <property name="DistanceCovered" value="plain"></property>
+   </bean>
+</beans>
